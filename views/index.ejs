@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Ola mundo</h1>
+<h1><%= locals.responstaUser %></h1>
+
+<form action="/submit" method="POST">
+    <input type="text" name="resposta">
+  <input type="submit" value="Generate Name">
+  <input type="submit" value="delete" name="apagar">
+</form>
+
+<%- include("partials/footer.ejs") %>
